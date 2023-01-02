@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { ContentComponent } from './content/content.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './task2/header/header.component';
+import { ContentComponent } from './task2/content/content.component';
+import { FooterComponent } from './task2/footer/footer.component';
+import { Task2Component } from './task2/task2.component';
+import { Task3Component } from './task3/task3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    Task2Component,
+    Task3Component
   ],
   imports: [
     BrowserModule,
