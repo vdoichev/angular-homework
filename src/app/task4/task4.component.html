@@ -1,0 +1,31 @@
+<ul>
+  <li *ngFor="let line of linesArray">
+    {{ line }}
+  </li>
+</ul>
+<p></p>
+
+<span *ngFor="let color of colorsArray; let i = index">
+  <input
+    type="radio"
+    name="colors"
+    value="{{ color }}"
+    (change)="changeMethod(i + 1)"
+  />
+  {{ color }}
+</span>
+
+<div [ngSwitch]="currentColor">
+  <div *ngSwitchCase="1" [ngStyle]="{ 'background-color': 'blue' }">
+    Синий див елемент
+  </div>
+  <div *ngSwitchCase="2" [ngStyle]="{ 'background-color': 'red' }">
+    Красный див елемент
+  </div>
+  <div *ngSwitchCase="3" [ngStyle]="{ 'background-color': 'green' }">
+    Зеленый див елемент
+  </div>
+  <div *ngSwitchCase="4" [ngStyle]="{ 'background-color': 'gold' }">
+    Золотой див елемент
+  </div>
+</div>
