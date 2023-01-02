@@ -1,7 +1,12 @@
 <h1>Галерея</h1>
 <br />
 
-<div class="img-examples">
+<div
+  tabindex="0"
+  class="img-examples"
+  (keyup.ArrowRight)="nextImage()"
+  (keyup.ArrowLeft)="prevImage()"
+>
   <div class="angular">
     <img
       [src]="ImagesArray[index]"
