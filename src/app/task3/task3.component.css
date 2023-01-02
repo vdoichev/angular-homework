@@ -1,0 +1,6 @@
+.img-examples{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #000;
+    padding: 10px;
+}
